@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace RawDATA_exe_csharp
 {
@@ -20,8 +21,7 @@ namespace RawDATA_exe_csharp
         {
             Func_Dep test1 = new Func_Dep();
             test1.CreateList();
-            test1.Dependency("A", "B", "C");
-
+            Console.WriteLine(test1.Dependency("A", "B", "C"));
         }
 
         public void CreateList()
